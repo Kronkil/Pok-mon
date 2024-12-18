@@ -13,13 +13,33 @@ body {
 
 /* Set Background */
 body {
-  background: url("https://assets.pokemon.com/assets/cms2/img/misc/landing-page/bg_01.jpg")
-    no-repeat center center / cover;
+  background-image: url("./Pictures/dd2zouo-047f7b3f-b895-43ac-82a4-abb6ca12c52a.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+}
+
+/* Header */
+header {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 20px 0; /* Space from top */
+}
+
+/* Main - Center the game container below the header */
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  flex-grow: 1;
+  width: 100%;
 }
 
 /* Game Container */
@@ -33,19 +53,11 @@ body {
   width: 100%;
 }
 
-/* Header */
-header {
-  text-align: center;
-  font-size: 2rem;
-  color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-bottom: 10px;
-}
-
 /* Pokémon Image */
 #pokemon-image {
-  max-width: 250px;
-  margin: 10px auto;
+  max-width: 400px; /* Increase size */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px auto;
   display: block;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }

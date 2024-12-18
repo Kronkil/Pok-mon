@@ -1,4 +1,4 @@
-// Fetch the first 20 Pokémon
+// Fetch the first 100 Pokémon
 async function fetchPokemonList() {
   try {
     const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
