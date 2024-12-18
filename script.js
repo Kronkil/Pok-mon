@@ -1,8 +1,8 @@
-// Fetch the first 1025 Pokémon
+// Fetch the first 1024 Pokémon
 async function fetchPokemonList() {
   try {
     const response = await fetch(
-      "https://pokeapi.co/api/v2/pokemon?limit=1025"
+      "https://pokeapi.co/api/v2/pokemon?limit=1024"
     );
     const data = await response.json();
     for (const pokemon of data.results) {
@@ -18,7 +18,9 @@ let currentPokemon = null;
 // Fetch a list of Pokémon and select one at random
 async function fetchPokemonList() {
   try {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
+    const response = await fetch(
+      "https://pokeapi.co/api/v2/pokemon?limit=1024"
+    );
     const data = await response.json();
     const randomPokemon = getRandomPokemon(data.results);
     const detailsResponse = await fetch(randomPokemon.url);
