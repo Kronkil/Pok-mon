@@ -1,0 +1,83 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full Height Body */
+html,
+body {
+  height: 100%;
+}
+
+/* Set Background */
+body {
+  background: url("https://assets.pokemon.com/assets/cms2/img/misc/landing-page/bg_01.jpg")
+    no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Game Container */
+#game-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Header */
+header {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+/* Pokémon Image */
+#pokemon-image {
+  max-width: 250px;
+  margin: 10px auto;
+  display: block;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons & Input */
+button,
+input[type="text"] {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+#submit-button {
+  background-color: #3d5af1;
+  color: white;
+}
+
+#new-game-button {
+  background-color: #42b83c;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Feedback */
+#feedback {
+  color: #ffd700;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
